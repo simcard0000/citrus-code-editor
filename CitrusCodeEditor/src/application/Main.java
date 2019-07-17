@@ -18,6 +18,7 @@ public class Main extends Application {
 		primaryStage.getIcons().add(icon);
 		primaryStage.setScene(theScene);
 		primaryStage.show();
+		
 	}
 	
 	public static void main(String[] args) {

@@ -24,22 +24,22 @@
       </Text>
       <HBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0" spacing="10.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#handleStartOpen" text="Open" textFill="#ff5500">
+            <Button mnemonicParsing="false" onAction="#handleStartOpen" style="-fx-faint-focus-color: transparent; -fx-focus-color: #ffc000;" text="Open" textFill="#ff5500">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#handleNew" text="New" textFill="#ff5500">
+            <Button mnemonicParsing="false" onAction="#handleNew" style="-fx-faint-focus-color: transparent; -fx-focus-color: #ffc000;" text="New" textFill="#ff5500">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="About" textFill="#ff5500">
+            <Button mnemonicParsing="false" style="-fx-faint-focus-color: transparent; -fx-focus-color: #ffc000;" text="About" textFill="#ff5500">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Documentation" textFill="#ff5500">
+            <Button mnemonicParsing="false" style="-fx-faint-focus-color: transparent; -fx-focus-color: #ffc000;" text="Documentation" textFill="#ff5500">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

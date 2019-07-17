@@ -2,10 +2,9 @@ package application;
 
 import java.io.File;
 import java.io.IOException;
-
 import javafx.fxml.FXMLLoader;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
+import javafx.stage.FileChooser;  
+import javafx.stage.Stage;  
 import javafx.stage.Window;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -13,13 +12,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TextInputDialog;
+import javafx.scene.web.HTMLEditor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 public class StartScreenController {
-	
-	//@FXML private whatever variable
-	
+
 	@FXML 
 	private Window getOrigin(ActionEvent ae) {
 		Node where = (Node) ae.getSource();
@@ -63,6 +61,18 @@ public class StartScreenController {
 		else {
 			File tempStore = new File("tempStoreCode.txt");
 			Parent newRoot = FXMLLoader.load(getClass().getResource("EditingScreen.fxml"));
+			
+			//Because the editing HTMLEditor appears first, I don't have
+			//to do anything special to get it.
+			Node topToolBar = newRoot.lookup(".top-toolbar");
+			Node botToolBar = newRoot.lookup(".bottom-toolbar");
+			
+			topToolBar.setManaged(false);
+			topToolBar.setDisable(true);
+			topToolBar.setVisible(false);
+			botToolBar.setManaged(false);
+			botToolBar.setDisable(true);
+			botToolBar.setVisible(false);
 			Stage newStage = (Stage) win;
 			Scene newScene = new Scene(newRoot);
 			newStage.setScene(newScene);
