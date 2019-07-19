@@ -1,5 +1,4 @@
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/simcard0000/citrus-code-editor.svg)
-![active development](https://img.shields.io/badge/active%20dev-yes-success.svg)
+![active development](https://img.shields.io/badge/active%20dev-yes-brightgreen.svg)
 # citrus-code-editor
 
 <img src="https://github.com/simcard0000/citrus-code-editor/blob/master/CitrusCodeEditor/src/application/citrus%20logo.png" width = 300>
