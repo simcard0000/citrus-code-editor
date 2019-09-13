@@ -32,7 +32,6 @@ public class PreLoader extends Preloader {
 		initStage.show();
 	}
 	
-	@Override
 	public void handleStateChangeNotification(StateChangeNotification event) {
 		if (event.getType() == StateChangeNotification.Type.BEFORE_LOAD) {
 			initStage.hide();
